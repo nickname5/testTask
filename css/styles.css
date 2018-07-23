@@ -1,0 +1,151 @@
+html {
+  font-size: 16px; }
+
+* {
+  font-family: 'Rajdhani', sans-serif; }
+
+body {
+  min-width: 320px; }
+
+.controls, .bag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+@media screen and (min-width: 100px) {
+  body {
+    max-width: 765px; }
+
+  .controls {
+    padding-left: 14px;
+    padding-right: 14px; }
+
+  .controls {
+    height: 50px; }
+
+  .infostring {
+    height: 20px;
+    line-height: 20px; }
+
+  .bag-login {
+    display: none; } }
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1023px; }
+
+  .controls {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .controls {
+    height: 36px;
+    padding: 0 12px; }
+
+  .infostring {
+    height: 14px;
+    line-height: 14px; }
+
+  .bag-login {
+    display: inline-block; } }
+@media screen and (min-width: 1024px) {
+  body {
+    max-width: 2000px; }
+
+  .controls {
+    padding-left: 25px;
+    padding-right: 25px; }
+
+  .controls {
+    height: 46px; }
+
+  .infostring {
+    height: 16px;
+    line-height: 16px; } }
+.controls {
+  background: black; }
+
+.menu-icon {
+  color: white;
+  cursor: pointer;
+  font-size: 1.875rem; }
+
+.controls__logo {
+  align-self: center; }
+
+.logo {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase; }
+
+.infostring {
+  font-size: 0.66rem;
+  font-weight: 400;
+  background-color: #c5c5c5;
+  color: white;
+  text-align: center; }
+
+.bag-login {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
+.bag__cart {
+  position: relative; }
+
+.cart__quant {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  border: solid 2px black;
+  z-index: 5;
+  font-size: 0.73525rem;
+  text-align: center;
+  line-height: 20px; }
+
+.PRODUTOS_EM_DESTAQUE {
+  font-size: 11.491px;
+  font-family: "Rajdhani";
+  color: #393939;
+  line-height: 1.191;
+  text-align: center;
+  -moz-transform: matrix(2.095153267, 0, 0, 2.095153267, 0, 0);
+  -webkit-transform: matrix(2.095153267, 0, 0, 2.095153267, 0, 0);
+  -ms-transform: matrix(2.095153267, 0, 0, 2.095153267, 0, 0);
+  position: absolute;
+  left: 731.594px;
+  top: 824.469px;
+  z-index: 152; }
+
+.LOGIN {
+  font-size: 9.269px;
+  font-family: "Rajdhani";
+  color: white;
+  line-height: 1.477;
+  text-align: center;
+  -moz-transform: matrix(2.8050952514, 0, 0, 2.8050952514, 0, 0);
+  -webkit-transform: matrix(2.8050952514, 0, 0, 2.8050952514, 0, 0);
+  -ms-transform: matrix(2.8050952514, 0, 0, 2.8050952514, 0, 0);
+  position: absolute;
+  left: 1301.61px;
+  top: 737.155px;
+  z-index: 170; }
+
+.LOGIN {
+  font-size: 9.269px;
+  font-family: "Rajdhani";
+  color: white;
+  line-height: 1.477;
+  text-align: center;
+  -moz-transform: matrix(2.337331902, 0, 0, 2.337331902, 0, 0);
+  -webkit-transform: matrix(2.337331902, 0, 0, 2.337331902, 0, 0);
+  -ms-transform: matrix(2.337331902, 0, 0, 2.337331902, 0, 0);
+  position: absolute;
+  left: 657.61px;
+  top: 482.155px;
+  z-index: 192; }
+
+/*# sourceMappingURL=styles.css.map */
