@@ -1,0 +1,203 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0!important;
+}
+
+.slick-slide {
+  margin: 0px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.slider-item {
+  box-sizing: border-box;
+  position: relative;
+  height: 600px;
+  width: 100%;
+  min-width: 320px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.draggable {
+  width: 100%;
+  padding: 0!important;
+}
+
+.carousel__text {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  text-transform: uppercase;
+}
+
+.carousel__text-descr {
+  font-family: "Courier New";
+}
+
+@media screen and (min-width: 100px) {
+  .slider-item {
+    height: 192px;
+    background-image: url("../img/sliderBGmob.jpg");
+    background-size: auto 120%;
+  }
+
+  .slick-dots {
+    bottom: 10px;
+  }
+
+  .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: solid 1px grey;
+    background-color: white;
+  }
+
+  .slick-dots .slick-active button {
+    background-color: black;
+  }
+
+  .slick-active {
+    opacity: 1;
+  }
+
+  .slick-dots li button::before {
+    content: '';
+  }
+
+  .slick-dots li {
+    width: 14px;
+    margin: 0 2px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .slider-item {
+    height: 300px;
+    background-image: url("../img/sliderBGtabl.jpg");
+    background-size: auto 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider-item {
+    height: 456px;
+    background-image: url("../img/sliderBGtabl.jpg");
+  }
+
+  .slick-dots {
+    bottom: 15px;
+  }
+
+  .slick-dots li button {
+    border-width: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider-item {
+    height: 708px;
+    background-image: url("../img/sliderBG.jpg");
+    background-size: cover;
+  }
+
+  .slick-dots {
+    bottom: 25px;
+  }
+
+  .slick-dots li button {
+    width: 15px;
+    height: 15px;
+  }
+
+  .slick-dots li {
+    width: 17px;
+    margin: 0 4px;
+  }
+}
+
+.Sports___Lifestyle {
+  font-size: 11.491px;
+  font-family: "Courier New";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.191;
+  text-align: center;
+  -moz-transform: matrix( 0.97024331078421,0,0,0.97024331078421,0,0);
+  -webkit-transform: matrix( 0.97024331078421,0,0,0.97024331078421,0,0);
+  -ms-transform: matrix( 0.97024331078421,0,0,0.97024331078421,0,0);
+  position: absolute;
+  left: 10.558px;
+  top: 147.657px;
+  z-index: 107;
+}
+
+.C_F_CLOTHING {
+  font-size: 11.491px;
+  font-family: "Rajdhani";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.191;
+  text-align: center;
+  -moz-transform: matrix( 1.97361989776503,0,0,1.97361989776502,0,0);
+  -webkit-transform: matrix( 1.97361989776503,0,0,1.97361989776502,0,0);
+  -ms-transform: matrix( 1.97361989776503,0,0,1.97361989776502,0,0);
+  position: absolute;
+  left: 113.42px;
+  top: 192.657px;
+  z-index: 203;
+}
+.CONFIRA {
+  font-size: 11.491px;
+  font-family: "Rajdhani";
+  color: rgb(0, 0, 0);
+  line-height: 1.191;
+  text-align: center;
+  -moz-transform: matrix( 1.4044788615883,0,0,1.4044788615883,0,0);
+  -webkit-transform: matrix( 1.4044788615883,0,0,1.4044788615883,0,0);
+  -ms-transform: matrix( 1.4044788615883,0,0,1.4044788615883,0,0);
+  position: absolute;
+  left: 121.638px;
+  top: 269.157px;
+  z-index: 204;
+}
+/*
+todo:
+carousel__text
+*/

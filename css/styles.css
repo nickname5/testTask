@@ -7,6 +7,11 @@ html {
 body {
   min-width: 320px; }
 
+@font-face {
+  font-family: "Courier New";
+  src: url("../fonts/cour.ttf");
+  font-weight: 400;
+  font-style: normal; }
 .controls, .bag {
   display: flex;
   flex-direction: row;
@@ -22,14 +27,19 @@ body {
     padding-right: 14px; }
 
   .controls {
-    height: 50px; }
+    height: 50px;
+    order: 1; }
 
   .infostring {
     height: 20px;
-    line-height: 20px; }
+    line-height: 20px;
+    order: 2; }
 
   .bag-login {
-    display: none; } }
+    display: none; }
+
+  .carousel {
+    order: 3; } }
 @media screen and (min-width: 768px) {
   body {
     max-width: 1023px; }
@@ -40,14 +50,20 @@ body {
 
   .controls {
     height: 36px;
-    padding: 0 12px; }
+    padding: 0 12px;
+    order: 3;
+    margin-top: -5px; }
 
   .infostring {
     height: 14px;
-    line-height: 14px; }
+    line-height: 14px;
+    order: 1; }
 
   .bag-login {
-    display: inline-block; } }
+    display: inline-block; }
+
+  .carousel {
+    order: 2; } }
 @media screen and (min-width: 1024px) {
   body {
     max-width: 2000px; }
@@ -62,6 +78,10 @@ body {
   .infostring {
     height: 16px;
     line-height: 16px; } }
+.header {
+  display: flex;
+  flex-direction: column; }
+
 .controls {
   background: black; }
 
@@ -98,6 +118,8 @@ body {
   position: absolute;
   height: 20px;
   width: 20px;
+  top: 0;
+  right: 20px;
   background-color: white;
   border-radius: 50%;
   border: solid 2px black;
@@ -134,18 +156,19 @@ body {
   top: 737.155px;
   z-index: 170; }
 
-.LOGIN {
-  font-size: 9.269px;
-  font-family: "Rajdhani";
-  color: white;
-  line-height: 1.477;
+.Sports___Lifestyle {
+  font-size: 11.491px;
+  font-family: "Courier New";
+  color: black;
+  text-transform: uppercase;
+  line-height: 1.191;
   text-align: center;
-  -moz-transform: matrix(2.337331902, 0, 0, 2.337331902, 0, 0);
-  -webkit-transform: matrix(2.337331902, 0, 0, 2.337331902, 0, 0);
-  -ms-transform: matrix(2.337331902, 0, 0, 2.337331902, 0, 0);
+  -moz-transform: matrix(0.9702433108, 0, 0, 0.9702433108, 0, 0);
+  -webkit-transform: matrix(0.9702433108, 0, 0, 0.9702433108, 0, 0);
+  -ms-transform: matrix(0.9702433108, 0, 0, 0.9702433108, 0, 0);
   position: absolute;
-  left: 657.61px;
-  top: 482.155px;
-  z-index: 192; }
+  left: 10.558px;
+  top: 147.657px;
+  z-index: 107; }
 
 /*# sourceMappingURL=styles.css.map */

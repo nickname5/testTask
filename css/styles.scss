@@ -10,11 +10,19 @@ body {
   min-width: 320px;
 }
 
+@font-face {
+  font-family: "Courier New";
+  src: url('../fonts/cour.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 @function remy($pxsize) {
-    @return ($pxsize/16)+rem;
+  @return ($pxsize/16)+rem;
 }
 
 $grey: #c5c5c5;
+$greyText: rgb(57, 57, 57);
 
 %flexRow {
   display: flex;
@@ -37,15 +45,21 @@ $grey: #c5c5c5;
 
   .controls {
     height: 50px;
+    order: 1;
   }
 
   .infostring {
     height: 20px;
     line-height: 20px;
+    order: 2;
   }
 
   .bag-login {
     display: none;
+  }
+
+  .carousel {
+    order: 3;
   }
 }
 
@@ -64,15 +78,22 @@ $grey: #c5c5c5;
   .controls {
     height: 36px;
     padding: 0 12px;
+    order: 3;
+    margin-top: -5px;
   }
 
   .infostring {
     height: 14px;
     line-height: 14px;
+    order: 1;
   }
 
   .bag-login {
     display: inline-block;
+  }
+
+  .carousel {
+    order: 2;
   }
 }
 
@@ -96,6 +117,11 @@ $grey: #c5c5c5;
     height: 16px;
     line-height: 16px;
   }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
 }
 
 .controls {
@@ -147,6 +173,8 @@ $grey: #c5c5c5;
   position: absolute;
   height: 20px;
   width: 20px;
+  top: 0;
+  right: 20px;
   background-color: white;
   border-radius: 50%;
   border: solid 2px black;
@@ -186,17 +214,18 @@ $grey: #c5c5c5;
   z-index: 170;
 }
 
-.LOGIN {
-  font-size: 9.269px;
-  font-family: "Rajdhani";
-  color: rgb(255, 255, 255);
-  line-height: 1.477;
+.Sports___Lifestyle {
+  font-size: 11.491px;
+  font-family: "Courier New";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.191;
   text-align: center;
-  -moz-transform: matrix( 2.33733190200244,0,0,2.33733190200244,0,0);
-  -webkit-transform: matrix( 2.33733190200244,0,0,2.33733190200244,0,0);
-  -ms-transform: matrix( 2.33733190200244,0,0,2.33733190200244,0,0);
+  -moz-transform: matrix( 0.97024331078421,0,0,0.97024331078421,0,0);
+  -webkit-transform: matrix( 0.97024331078421,0,0,0.97024331078421,0,0);
+  -ms-transform: matrix( 0.97024331078421,0,0,0.97024331078421,0,0);
   position: absolute;
-  left: 657.61px;
-  top: 482.155px;
-  z-index: 192;
+  left: 10.558px;
+  top: 147.657px;
+  z-index: 107;
 }
