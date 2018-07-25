@@ -39,10 +39,23 @@ body {
     display: none; }
 
   .carousel {
-    order: 3; } }
+    order: 3; }
+
+  .products__header {
+    margin-top: 10px; }
+
+  .products__header-text {
+    font-size: 1.125rem;
+    margin: 0 10px; }
+
+  .products__header-img {
+    width: 40px; }
+
+  .products__carousel {
+    margin-top: 10px; } }
 @media screen and (min-width: 768px) {
   body {
-    max-width: 1023px; }
+    max-width: 1279px; }
 
   .controls {
     padding-left: 20px;
@@ -63,8 +76,18 @@ body {
     display: inline-block; }
 
   .carousel {
-    order: 2; } }
-@media screen and (min-width: 1024px) {
+    order: 2; }
+
+  .products__header {
+    margin-top: 20px; }
+
+  .products__header-text {
+    font-size: 1.25rem;
+    margin: 0 20px; }
+
+  .products__header-img {
+    width: 50px; } }
+@media screen and (min-width: 1280px) {
   body {
     max-width: 2000px; }
 
@@ -77,10 +100,36 @@ body {
 
   .infostring {
     height: 16px;
-    line-height: 16px; } }
+    line-height: 16px; }
+
+  .products__header {
+    margin-top: 30px; }
+
+  .products__header-text {
+    font-size: 1.6875rem;
+    margin: 0 24px; }
+
+  .products__header-img {
+    width: 60px; }
+
+  .products__carousel {
+    margin-top: 20px; } }
 .header {
   display: flex;
   flex-direction: column; }
+
+.carousel,
+.products__carousel {
+  width: 100%;
+  max-width: 1280px;
+  position: relative; }
+
+.carousel {
+  margin: 0 auto; }
+
+.products__carousel {
+  margin-left: auto;
+  margin-right: auto; }
 
 .controls {
   background: black; }
@@ -128,47 +177,15 @@ body {
   text-align: center;
   line-height: 20px; }
 
-.PRODUTOS_EM_DESTAQUE {
-  font-size: 11.491px;
-  font-family: "Rajdhani";
-  color: #393939;
-  line-height: 1.191;
+.products__header {
+  width: 100%;
   text-align: center;
-  -moz-transform: matrix(2.095153267, 0, 0, 2.095153267, 0, 0);
-  -webkit-transform: matrix(2.095153267, 0, 0, 2.095153267, 0, 0);
-  -ms-transform: matrix(2.095153267, 0, 0, 2.095153267, 0, 0);
-  position: absolute;
-  left: 731.594px;
-  top: 824.469px;
-  z-index: 152; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
-.LOGIN {
-  font-size: 9.269px;
-  font-family: "Rajdhani";
-  color: white;
-  line-height: 1.477;
-  text-align: center;
-  -moz-transform: matrix(2.8050952514, 0, 0, 2.8050952514, 0, 0);
-  -webkit-transform: matrix(2.8050952514, 0, 0, 2.8050952514, 0, 0);
-  -ms-transform: matrix(2.8050952514, 0, 0, 2.8050952514, 0, 0);
-  position: absolute;
-  left: 1301.61px;
-  top: 737.155px;
-  z-index: 170; }
-
-.Sports___Lifestyle {
-  font-size: 11.491px;
-  font-family: "Courier New";
-  color: black;
-  text-transform: uppercase;
-  line-height: 1.191;
-  text-align: center;
-  -moz-transform: matrix(0.9702433108, 0, 0, 0.9702433108, 0, 0);
-  -webkit-transform: matrix(0.9702433108, 0, 0, 0.9702433108, 0, 0);
-  -ms-transform: matrix(0.9702433108, 0, 0, 0.9702433108, 0, 0);
-  position: absolute;
-  left: 10.558px;
-  top: 147.657px;
-  z-index: 107; }
+.products__header-text {
+  font-weight: 500; }
 
 /*# sourceMappingURL=styles.css.map */
