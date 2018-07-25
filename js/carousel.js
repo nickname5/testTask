@@ -1,3 +1,5 @@
+var slides = 6;
+
 $(document).on('ready', function() {
   $(".single-item").slick({
     infinite: true,
@@ -8,24 +10,20 @@ $(document).on('ready', function() {
 
   $('.responsive').slick({
     dots: false,
-    arrows: true,
-    infinite: true,
+    arrows: false,
+    infinite: false,
     speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 3,
+    // slidesToShow: 5,
+    // slidesToScroll: 3,
     mobileFirst: true,
-    // autoplay: true,
-    // autoplaySpeed: 10000,
-    // centerMode: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 6,
           slidesToScroll: 1,
-          infinite: true,
           dots: false,
-          arrows: true,
+          arrows: false
         }
       },
       {
@@ -33,7 +31,7 @@ $(document).on('ready', function() {
         settings: {
           slidesToShow: 5,
           slidesToScroll: 1,
-          arrows: true,
+          arrows: false,
         }
       },
       {
@@ -41,7 +39,6 @@ $(document).on('ready', function() {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          arrows: true,
         }
       },
       {
@@ -49,7 +46,6 @@ $(document).on('ready', function() {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          arrows: false,
         }
       },
       {
@@ -57,7 +53,6 @@ $(document).on('ready', function() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          arrows: false,
         }
       },
       {
@@ -65,7 +60,7 @@ $(document).on('ready', function() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,
+          arrows: false
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -74,3 +69,24 @@ $(document).on('ready', function() {
     ]
   });
 });
+
+$('.arrow_left').on('click', function(){
+  $('.responsive').slick('slickPrev');
+});
+$('.arrow_right').on('click', function(){
+  $('.responsive').slick('slickNext');
+});
+
+// $('.responsive .slick-slide').slick('slickCurrentSlide');
+
+
+
+function checkArrows() {
+  var curSlidesToShow = $('.responsive').slick('slickGetOption', 'slidesToShow');
+  var firstActiveSlide = $('.responsive').slick('slickCurrentSlide');
+  if (firstActiveSlide === 0) {
+    $('.arrow_left').addClass('arrow_disabled')
+  } else {
+    $('.arrow_left').removeClass('arrow_disabled')
+  }
+}

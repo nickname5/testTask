@@ -116,20 +116,22 @@ body {
     margin-top: 20px; } }
 .header {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #f8f7f3; }
 
 .carousel,
 .products__carousel {
   width: 100%;
-  max-width: 1280px;
   position: relative; }
 
 .carousel {
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1280px; }
 
 .products__carousel {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  max-width: 1180px; }
 
 .controls {
   background: black; }
