@@ -409,20 +409,20 @@ $greyText: rgb(57, 57, 57);
 
   a {
     @extend %shadow;
+    display: table;
     transition: background-color 0.2s;
     background-color: rgba(0, 0, 0, 0);
+    text-align: center;
   }
 }
 
 %shadow {
-  display: table;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: 2;
-  text-align: center;
   text-decoration: none;
   color: white;
 }
@@ -452,15 +452,29 @@ $greyText: rgb(57, 57, 57);
   @extend %tableCell;
   font-weight: 500;
   color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 .hoverlink {
   @extend %shadow;
   opacity: 0;
+  display: block;
+  bottom: 0;
+  height: 100%;
   transition: opacity 0.2s;
   background-color: rgba(0, 0, 0, 0.5);
   &:hover {
     opacity: 1;
+  }
+  div {
+    display: table;
+    height: 100%;
+    width: 100%;
+    i {
+      width: 100%;
+    }
   }
 }
 
