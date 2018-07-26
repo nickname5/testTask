@@ -210,6 +210,10 @@ $greyText: rgb(57, 57, 57);
   .block_left {
     margin-right: 15px;
   }
+
+  .slide-title {
+    font-size: remy(20.12);
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -273,6 +277,10 @@ $greyText: rgb(57, 57, 57);
   .blocks__block-subtitle {
     font-size: remy(19.31);
     letter-spacing: 0.3rem;
+  }
+
+  .slide-title {
+    font-size: remy(24.16);
   }
 }
 
@@ -379,6 +387,11 @@ $greyText: rgb(57, 57, 57);
   width: 100%;
 }
 
+.categories {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
 .categories-figure {
   display: block;
 }
@@ -395,24 +408,32 @@ $greyText: rgb(57, 57, 57);
   }
 
   a {
-    display: table;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0);
-    text-align: center;
-    text-decoration: none;
-    color: white;
+    @extend %shadow;
     transition: background-color 0.2s;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 
-.blocks__block-title {
+%shadow {
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+%tableCell {
   display: table-cell;
   vertical-align: middle;
+}
+
+.blocks__block-title {
+  @extend %tableCell;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -426,3 +447,21 @@ $greyText: rgb(57, 57, 57);
   width: 100%;
   top: 60%;
 }
+
+.slide-title {
+  @extend %tableCell;
+  font-weight: 500;
+  color: white;
+}
+
+.hoverlink {
+  @extend %shadow;
+  opacity: 0;
+  transition: opacity 0.2s;
+  background-color: rgba(0, 0, 0, 0.5);
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// TODO: font-size slide-title, slide-title in 2d gallery marging in gallerys
