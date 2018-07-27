@@ -17,19 +17,24 @@
 <body>
   <header class="header">
     <div class="controls">
-      <div class="menu">
-        <i class="menu-icon fas fa-bars"></i>
-      </div>
-      <div class="logo controls__logo">
-        cloth & fashion
-      </div>
-      <div class="bag">
-        <!-- <span class="bag-login">login</span> -->
-        <div class="bag__cart">
-          <img src="img/cart.png" alt="cart">
-          <div class="cart__quant">
-            88
+      <div class="controls__wrapper">
+        <div class="menu">
+          <i class="menu-icon fas fa-bars"></i>
+        </div>
+        <div class="logo controls__logo">
+          cloth & fashion
+        </div>
+        <div class="bag">
+          <!-- <span class="bag-login">login</span> -->
+          <div class="bag__cart">
+            <img src="img/cart.png" alt="cart">
+            <div class="cart__quant">
+              88
+            </div>
           </div>
+          <!-- <div class="bag__bar bar">
+
+          </div> -->
         </div>
       </div>
     </div>
@@ -201,7 +206,7 @@
     </div>
   </section>
   <section class="instagram">
-    <div class="section__header">
+    <div class="section__header instagram__header">
       <img class="section__header-img" src="img/arrowLeft.png" alt="">
       <span class="section__header-text">GALERIA DO INSTAGRAM</span>
       <img class="section__header-img" src="img/arrowRight.png" alt="">
@@ -210,21 +215,56 @@
       <div class="responsive2 slider" data-sizes="50vw">
         <div class="slider-item instagram__item">
           <img src="img/inst1.jpg" alt="">
+          <a class="hoverlink" href="#">
+            <div>
+              <span class="slide-title">
+                <i class="fas fa-heart"></i>
+                1.323 likes
+              </span>
+            </div>
+          </a>
         </div>
         <div class="slider-item instagram__item">
           <img src="img/inst2.jpg" alt="">
+          <a class="hoverlink" href="#">
+            <div>
+              <span class="slide-title">
+                <i class="fas fa-heart"></i>
+                1.323 likes
+              </span>
+            </div>
+          </a>
         </div>
         <div class="slider-item instagram__item">
           <img src="img/inst3.jpg" alt="">
+          <a class="hoverlink" href="#">
+            <div>
+              <span class="slide-title">
+                <i class="fas fa-heart"></i>
+                1.323 likes
+              </span>
+            </div>
+          </a>
         </div>
         <div class="slider-item instagram__item">
           <img src="img/inst4.jpg" alt="">
+          <a class="hoverlink" href="#">
+            <div>
+              <span class="slide-title">
+                <i class="fas fa-heart"></i>
+                1.323 likes
+              </span>
+            </div>
+          </a>
         </div>
         <div class="slider-item instagram__item">
           <img src="img/inst5.jpg" alt="">
           <a class="hoverlink" href="#">
             <div>
-              <span class="slide-title"><i class="fas fa-heart"></i>1.323 likes</span>
+              <span class="slide-title">
+                <i class="fas fa-heart"></i>
+                1.323 likes
+              </span>
             </div>
           </a>
         </div>
@@ -232,7 +272,7 @@
     </div>
   </section>
   <section class="usa">
-    <div class="section__header">
+    <div class="section__header usa__header">
       <img class="section__header-img" src="img/arrowLeft.png" alt="">
       <span class="section__header-text">QUEM USA</span>
       <img class="section__header-img" src="img/arrowRight.png" alt="">
@@ -274,11 +314,43 @@
       </div>
     </div>
   </section>
-
+  <section class="contact">
+    <form class="contact__form" action="" method="post">
+      <div class="form-title">newsletter</div>
+      <input class="form-input input_first" type="text" name="name" value="" placeholder="NOME">
+      <input class="form-input input_second" type="email" name="mail" value=""
+      placeholder="ENDEREÇO DE EMAIL">
+      <input class="form-input form-button" type="submit" name="" value="CADASTRAR">
+    </form>
+  </section>
+  <div class="bottomLogo">
+    <img src="img/footer-logo.png" alt="enext-group">
+  </div>
+  <footer class="footer">
+    <div class="footer__info">
+      <div class="info__links">
+        <a class="info__links-link" href="#">SOBRE</a>
+        <a class="info__links-link" href="#">CONTATO</a>
+        <a class="info__links-link" href="#">TERMOS & CONDIÇÕES</a>
+        <a class="info__links-link" href="#">POLÍTICA DE PRIVACIDADE</a>
+      </div>
+      <div class="info__icons">
+        <a class="info__icons-link" href="#">
+          <img src="img/facebook-icon.png" alt="facebook-icon">
+        </a>
+        <a class="info__icons-link" href="#">
+          <img src="img/twitter-icon.png" alt="twitter-icon">
+        </a>
+        <a class="info__icons-link" href="#">
+          <img src="img/insta-icon.png" alt="instagram-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" src="js/carousel.js"></script>
 </body>
 </html>
 
-<!-- TODO: alt img # links hovers -->
+<!-- TODO: alt img # -->
