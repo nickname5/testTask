@@ -11,15 +11,20 @@
 // }
 var menuWidth = 440;
 
-// $('#bag').click(function() {
-//   if (document.documentElement.clientWidth > 1280) {
-//     var marginRight = (document.documentElement.clientWidth - 1280) / 2;
-//     var width = marginRight + menuWidth;
-//     $('.bag__bar').css({'width': `${width}px`, 'right': `-${marginRight}px`});
-//   }
-// })
+$('#bag').click(function() {
+  checkWidth()
+  $('.bag__bar').slideToggle({
+    // start: function() {$('.controls').addClass('fix'); console.log($('.controls'));},
+    // done: function() {$('.controls').removeClass('fix')}
+  });
+  $('.popup').toggle();
+});
 
-$(window).resize(checkWidth)
+$('.bar__footer-text').click(function () {
+  $('.bag__bar').slideUp();
+});
+
+$(window).resize(checkWidth);
 
 function checkWidth() {
   if (document.documentElement.clientWidth > 1280) {
