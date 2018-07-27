@@ -18,7 +18,7 @@
   <header class="header">
     <div class="controls">
       <div class="controls__wrapper">
-        <div class="menu">
+        <div id="menu" class="menu">
           <i class="menu-icon fas fa-bars"></i>
         </div>
         <div class="logo controls__logo">
@@ -26,15 +26,35 @@
         </div>
         <div class="bag">
           <!-- <span class="bag-login">login</span> -->
-          <div class="bag__cart">
+          <div id="bag" class="bag__cart">
             <img src="img/cart.png" alt="cart">
             <div class="cart__quant">
               88
             </div>
           </div>
-          <!-- <div class="bag__bar bar">
-
-          </div> -->
+          <div class="bag__bar bar">
+            <div class="bar-title">meu carrinho</div>
+            <div class="bar__product">
+              <div class="bar__product-wrapper">
+                <img src="img/p3.jpg" alt="product">
+                <div class="product__info">
+                  <div class="product__info-title">
+                    Nome de Produto
+                  </div>
+                  <div class="product__info-close square">X</div>
+                  <div class="product__info-color">
+                    <div></div>
+                  </div>
+                  <div class="product__info-quantity">
+                    <button class="square" type="button" name="button">+</button>
+                    <div class="num">88</div>
+                    <button class="square" type="button" name="button">-</button>
+                  </div>
+                  <div class="product__info-price">R$88.88</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -326,6 +346,7 @@
   <div class="bottomLogo">
     <img src="img/footer-logo.png" alt="enext-group">
   </div>
+  <div class="popup"></div>
   <footer class="footer">
     <div class="footer__info">
       <div class="info__links">
@@ -350,6 +371,7 @@
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" src="js/carousel.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>
 
