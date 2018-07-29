@@ -55,6 +55,16 @@ $greyText: rgb(57, 57, 57);
   }
 }
 
+.soc-icon {
+  display: inline-block;
+  background: url('../img/icons.png')
+  no-repeat; overflow:
+  hidden;
+  text-indent: -9999px;
+  text-align: left;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 100px) {
   body {
     max-width: 765px;
@@ -70,6 +80,10 @@ $greyText: rgb(57, 57, 57);
   .controls {
     height: 50px;
     order: 1;
+  }
+
+  .bag-login {
+    display: none;
   }
 
   .infostring {
@@ -96,6 +110,10 @@ $greyText: rgb(57, 57, 57);
     letter-spacing: 0;
   }
 
+  .products__header {
+    margin-top: 20px;
+  }
+
   .section__header-img {
     width: 40px;
   }
@@ -104,7 +122,7 @@ $greyText: rgb(57, 57, 57);
     margin-top: 10px;
   }
 
-  .categories-figure {
+  .clothes-figure {
     width: 124px;
     margin: 50px auto 34px;
   }
@@ -194,8 +212,6 @@ $greyText: rgb(57, 57, 57);
     flex-flow: row wrap;
   }
 
-  $halfMarg: 7.5px;
-
   .blocks__block {
     @include grid(7.5px);
   }
@@ -236,6 +252,11 @@ $greyText: rgb(57, 57, 57);
     margin-top: -5px;
   }
 
+  .bag-login {
+    display: block;
+    line-height: 36px;
+  }
+
   .infostring {
     height: 14px;
     line-height: 14px;
@@ -264,7 +285,7 @@ $greyText: rgb(57, 57, 57);
     width: 50px;
   }
 
-  .categories-figure {
+  .clothes-figure {
     margin: 20px auto 26px;
   }
 
@@ -308,10 +329,22 @@ $greyText: rgb(57, 57, 57);
     font-size: remy(14);
   }
 
-  .info__icons-link {
-    img {
-      height: 17px;
-    }
+  .info-f {
+    background-position: -10px -268px;
+    width: 9px;
+    height: 16px;
+  }
+
+  .info-t {
+    background-position: -10px -128px;
+    width: 21px;
+    height: 14px;
+  }
+
+  .info-i {
+    background-position: -10px -181px;
+    width: 15px;
+    height: 15px;
   }
 
   .bottomLogo {
@@ -384,6 +417,10 @@ $greyText: rgb(57, 57, 57);
     height: 46px;
   }
 
+  .bag-login {
+    line-height: 46px;
+  }
+
   .infostring {
     height: 16px;
     line-height: 16px;
@@ -406,7 +443,7 @@ $greyText: rgb(57, 57, 57);
     margin-top: 20px;
   }
 
-  .categories-figure {
+  .clothes-figure {
     width: 158px;
     margin: 70px auto 38px;
   }
@@ -458,10 +495,22 @@ $greyText: rgb(57, 57, 57);
     font-size: remy(15.38);
   }
 
-  .info__icons-link {
-    img {
-      height: 22px;
-    }
+  .info-f {
+    background-position: -10px -206px;
+    width: 12px;
+    height: 23px;
+  }
+
+  .info-t {
+    background-position: -10px -38px;
+    width: 30px;
+    height: 20px;
+  }
+
+  .info-i {
+    background-position: -10px -95px;
+    width: 23px;
+    height: 23px;
   }
 
   .contact__form {
@@ -491,16 +540,6 @@ $greyText: rgb(57, 57, 57);
   .input_second {
     margin-right: 15px;
   }
-
-  // .form-button {
-  //   box-shadow: 1px 4px 0 0 #4f5052, -1px 4px 0 0 #4f5052;
-  //   transition: transform 0.2s;
-  //   &:hover {
-  //     transform: translateY(4px) translateX(2px);
-  //     box-shadow: none;
-  //     color: white;
-  //   }
-  // }
 }
 
 .header {
@@ -528,12 +567,10 @@ $greyText: rgb(57, 57, 57);
 
 .controls {
   background: black;
-  position: relative;
 }
 
 .menu-icon {
   color: white;
-  cursor: pointer;
   font-size: 1.875rem;
 }
 
@@ -558,17 +595,40 @@ $greyText: rgb(57, 57, 57);
 
 .bag {
   @extend %flexRow;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+}
+
+.menu {
+  position: relative;
+  height: 100%;
 }
 
 .bag-login {
   color: white;
   font-size: remy(24);
   text-transform: uppercase;
+  padding-right: 25px;
+  width: calc(100% - 34px);
+  height: 100%;
+  text-align: right;
+}
+
+.bag__cart,
+.menu-icon {
+  position: relative;
+  cursor: pointer;
 }
 
 .bag__cart {
-  position: relative;
   z-index: 7;
+}
+
+.bag__cart-icon {
+  background-position: -10px -0px;
+  width: 34px;
+  height: 28px;
 }
 
 .cart__quant {
@@ -580,10 +640,9 @@ $greyText: rgb(57, 57, 57);
   background-color: white;
   border-radius: 50%;
   border: solid 2px black;
-  z-index: 10;
   font-size: remy(11.764);
   text-align: center;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .section__header {
@@ -599,7 +658,7 @@ $greyText: rgb(57, 57, 57);
   font-weight: 500;
 }
 
-.categories,
+.clothes,
 .instagram,
 .usa,
 .contact {
@@ -607,7 +666,7 @@ $greyText: rgb(57, 57, 57);
   margin: 0 auto;
 }
 
-.categories {
+.clothes {
   max-width: 1280px;
 }
 
@@ -616,7 +675,7 @@ $greyText: rgb(57, 57, 57);
   box-sizing: content-box;
 }
 
-.categories-figure {
+.clothes-figure {
   display: block;
 }
 
@@ -629,10 +688,14 @@ $greyText: rgb(57, 57, 57);
 
   a {
     @extend %shadow;
-    display: table;
     transition: background-color 0.2s;
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
+    div {
+      width: 100%;
+      height: 100%;
+      display: table;
+    }
   }
 }
 
@@ -656,6 +719,7 @@ $greyText: rgb(57, 57, 57);
   @extend %tableCell;
   text-transform: uppercase;
   font-weight: 600;
+  height: 100%;
 }
 
 .blocks__block-subtitle {
@@ -781,201 +845,4 @@ input::placeholder {
   height: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  position: relative;
 }
-
-.popup {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 5;
-  background-color: rgba(255, 255, 255, .502);
-  display: none;
-}
-
-.bar {
-  position: absolute;
-  z-index: 6;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  max-height: 660px;
-  width: 440px;
-  background-color: white;
-  border-bottom: solid 2px black;
-  display: none;
-  // overflow: scroll;
-}
-
-.bar-title {
-  color: white;
-  width: 100%;
-  padding-left: 24px;
-  height: 46px;
-  line-height: 46px;
-  background-color: black;
-  text-transform: uppercase;
-  font-size: remy(20);
-  font-weight: 500;
-}
-
-.bag__bar {
-  border-left: solid 2px black;
-}
-
-.bar__product {
-  width: 100%;
-  height: 120px;
-  border-bottom: solid 1px #c6c6c6;
-}
-
-%bar-wrapper {
-  width: 100%;
-  max-width: 440px;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.bar__product-wrapper {
-  @extend %bar-wrapper;
-  img {
-    height: 100%;
-  }
-}
-
-.product__info {
-  width: 100%;
-  height: 100%;
-  padding: 10px 24px 8px 13px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: space-between;
-  justify-content: space-between;
-  font-size: remy(22);
-}
-
-.product__info-title {
-  width: calc(100% - 28px);
-}
-
-.square {
-  width: 24px;
-  height: 26px;
-  line-height: 24px;
-  text-align: center;
-  border: solid 2px black;
-  background-color: white;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.product__info-color {
-  width: 100%;
-
-  div {
-    width: 22px;
-    height: 22px;
-    background-color: black;
-  }
-}
-
-.product__info-title {
-  font-weight: 500;
-  letter-spacing: 0.05rem;
-}
-
-.product__info-button {
-  padding: 0;
-  text-align: center;
-}
-
-.num {
-  display: inline-block;
-  height: 24px;
-  width: 42px;
-  background-color: #d1d1d1;
-  text-align: center;
-}
-
-.product__info-quantity,
-.product__info-price {
-  margin-top: 20px;
-}
-
-.show {
-  display: block
-}
-
-.bar__total {
-  height: 50px;
-  width: 100%;
-  position: absolute;
-  bottom: 85px;
-  border-top: solid 1px #c6c6c6;
-  background-color: #dcdcdc;
-}
-
-.total__wrapper {
-  @extend %bar-wrapper;
-  padding: 0 24px 0 12px;
-  text-transform: uppercase;
-  font-size: remy(22);
-  div {
-    line-height: 50px;
-    color: #656565;
-  }
-}
-
-.bar__total-title {
-  font-weight: 500;
-  width: 100%;
-}
-
-.bar__footer {
-  height: 85px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-color: black;
-  font-size: remy(26);
-  font-weight: 700;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: row;
-}
-
-.bar__footer-text {
-  width: 222px;
-  height: 100%;
-  display: table;
-  background-color: white;
-  div {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color: #dcdcdc;
-    transition: color 0.2s;
-    cursor: pointer;
-    &:hover {
-      color: black;
-    }
-  }
-}
-
-.bar__footer-checkout {
-  color: white;
-  width: calc(100% - 222px);
-  line-height: 85px;
-  padding-left: 22px;
-  cursor: pointer;
-  i {
-    margin-left: 40px;
-  }
-}
-
-// .fix {
-//   z-index: 100000;
-// }
