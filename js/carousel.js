@@ -14,8 +14,6 @@
       arrows: false,
       infinite: false,
       speed: 300,
-      // slidesToShow: 5,
-      // slidesToScroll: 3,
       mobileFirst: true,
       swipe: true,
       swipeToSlide: true,
@@ -69,9 +67,6 @@
             arrows: false
           }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ]
     });
 

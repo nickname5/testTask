@@ -13,7 +13,7 @@ body {
   src: url("../fonts/cour.ttf");
   font-weight: 400;
   font-style: normal; }
-.bag, .footer__info, .controls__wrapper {
+.bag, .footer__info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -34,13 +34,17 @@ body {
   .clothes,
   .instagram,
   .usa,
-  .contact, .footer__info, .controls__wrapper {
+  .contact, .footer__info {
     padding-left: 14px;
     padding-right: 14px; }
 
   .controls {
     height: 50px;
-    order: 1; }
+    order: 1;
+    position: relative; }
+
+  .logo {
+    font-size: 1.875rem; }
 
   .bag-login {
     display: none; }
@@ -163,7 +167,7 @@ body {
   .clothes,
   .instagram,
   .usa,
-  .contact, .footer__info, .controls__wrapper {
+  .contact, .footer__info {
     padding-left: 20px;
     padding-right: 20px; }
 
@@ -173,6 +177,9 @@ body {
     padding-bottom: 0;
     order: 3;
     margin-top: -5px; }
+
+  .logo {
+    font-size: 1.875rem; }
 
   .bag-login {
     display: block;
@@ -297,12 +304,17 @@ body {
   .clothes,
   .instagram,
   .usa,
-  .contact, .footer__info, .controls__wrapper {
+  .contact, .footer__info {
     padding-left: 25px;
     padding-right: 25px; }
 
   .controls {
     height: 46px; }
+
+  .logo {
+    font-size: 1.875rem;
+    width: 400px;
+    text-align: center; }
 
   .bag-login {
     line-height: 46px; }
@@ -430,7 +442,11 @@ body {
   max-width: 1180px; }
 
 .controls {
-  background: black; }
+  background: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 .menu-icon {
   color: white;
@@ -440,7 +456,6 @@ body {
   align-self: center; }
 
 .logo {
-  font-size: 1.875rem;
   font-weight: 700;
   color: white;
   text-transform: uppercase; }
@@ -648,12 +663,6 @@ input::placeholder {
 .input_second:focus {
   border-color: #4f5052;
   outline-width: 0; }
-
-.controls__wrapper {
-  width: 100%;
-  height: 100%;
-  max-width: 1280px;
-  margin: 0 auto; }
 
 .withoutScroll {
   overflow: hidden; }

@@ -80,6 +80,11 @@ $greyText: rgb(57, 57, 57);
   .controls {
     height: 50px;
     order: 1;
+    position: relative;
+  }
+
+  .logo {
+    font-size: remy(30);
   }
 
   .bag-login {
@@ -252,6 +257,10 @@ $greyText: rgb(57, 57, 57);
     margin-top: -5px;
   }
 
+  .logo {
+    font-size: remy(30);
+  }
+
   .bag-login {
     display: block;
     line-height: 36px;
@@ -417,6 +426,12 @@ $greyText: rgb(57, 57, 57);
     height: 46px;
   }
 
+  .logo {
+    font-size: remy(30);
+    width: 400px;
+    text-align: center;
+  }
+
   .bag-login {
     line-height: 46px;
   }
@@ -567,6 +582,10 @@ $greyText: rgb(57, 57, 57);
 
 .controls {
   background: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .menu-icon {
@@ -579,7 +598,6 @@ $greyText: rgb(57, 57, 57);
 }
 
 .logo {
-  font-size: remy(30);
   font-weight: 700;
   color: white;
   text-transform: uppercase;
@@ -837,15 +855,6 @@ input::placeholder {
     border-color: #4f5052;
     outline-width: 0;
   }
-}
-
-.controls__wrapper {
-  @extend %sect;
-  @extend %flexRow;
-  width: 100%;
-  height: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 .withoutScroll {
