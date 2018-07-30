@@ -446,6 +446,7 @@ body {
   text-transform: uppercase; }
 
 .infostring {
+  letter-spacing: 0.11rem;
   font-size: 0.66rem;
   font-weight: 400;
   background-color: #c5c5c5;
@@ -653,5 +654,8 @@ input::placeholder {
   height: 100%;
   max-width: 1280px;
   margin: 0 auto; }
+
+.withoutScroll {
+  overflow: hidden; }
 
 /*# sourceMappingURL=styles.css.map */

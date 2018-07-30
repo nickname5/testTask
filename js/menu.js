@@ -1,23 +1,11 @@
-// const menu = document.getElementById('nav');
-//
-// menu.addEventListener('click', handleClick);
-//
-// function handleClick() {
-//   if (menu.classList[0] == 'open') {
-//     menu.classList.remove('open');
-//   } else {
-//     menu.classList.add('open');
-//   }
-// }
 var menuWidth = 440;
 var menuWidthTablet = 278;
 
 $('#bag').click(function() {
-  checkWidth()
-  $('.bag__bar').slideToggle({
-    // start: function() {$('.controls').addClass('fix'); console.log($('.controls'));},
-    // done: function() {$('.bar-title').toggle();}
-  });
+  checkWidth();
+  scroll();
+  $('body').toggleClass('withoutScroll');
+  $('.bag__bar').slideToggle();
   if (document.documentElement.clientWidth > 767) {
     $('.bag__bar-title').toggle();
     $('.overlay').toggle();
@@ -33,7 +21,9 @@ $('.bar__footer-text').click(function () {
 });
 
 $('.menu-act').click(function() {
-  checkWidth()
+  checkWidth();
+  scroll();
+  $('body').toggleClass('withoutScroll');
   $('.menu__bar').slideToggle();
   if (document.documentElement.clientWidth > 767) {
     $('.menu__bar-title').toggle();
@@ -64,16 +54,10 @@ function checkWidth() {
     $('.bar').css({'width': `${width}px`/*, 'right': `-${marginRight}px`*/});
     $('.bar-title').css({'width': `${width}px`});
   }
-
 }
 
-/*
-
-open -> popup.css.top
-
-*/
-
-// else {
-//   console.log('less');
-//   $('.bag__bar').css({'width': `${menuWidth}px`/*, 'right': `0px`*/});
-// }
+function scroll() {
+  $('html, body').animate({
+      scrollTop: $(".controls").offset().top
+  }, 1000);
+}
