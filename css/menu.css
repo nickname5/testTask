@@ -285,7 +285,9 @@
     line-height: 46px; }
 
   .menu__bar {
-    max-height: 610px;
+    max-height: 610px; }
+
+  .bar {
     overflow-y: auto; }
 
   .menu__bar-title div {
@@ -530,11 +532,11 @@
   .bar__footer-checkout i {
     vertical-align: middle; }
 
-.menu__bar::-webkit-scrollbar {
+.bar::-webkit-scrollbar {
   width: 6px;
   background-color: white;
   border: solid 1px black; }
-.menu__bar::-webkit-scrollbar-thumb {
+.bar::-webkit-scrollbar-thumb {
   background: black; }
 
 .menu__bar-search {

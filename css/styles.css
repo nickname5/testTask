@@ -54,9 +54,6 @@ body {
     line-height: 20px;
     order: 2; }
 
-  .bag-login {
-    display: none; }
-
   .carousel {
     order: 3; }
 
@@ -126,14 +123,12 @@ body {
     line-height: 38px; }
 
   .form-button {
-    color: white; }
+    color: white;
+    border: solid black 2px;
+    box-shadow: 0 4px 0 0 #4f5052; }
 
   .form-input {
-    border: solid #d0d0d0 2px; }
-
-  .form-button {
-    border: solid black 2px;
-    box-shadow: 0 4px 0 0 #4f5052; } }
+    border: solid #d0d0d0 2px; } }
 @media screen and (min-width: 600px) {
   .block_left {
     margin-right: 15px; }
@@ -152,7 +147,6 @@ body {
     width: calc(37.2% - 7.5px); }
   .blocks__block:nth-of-type(6) {
     width: calc(62.8% - 7.5px); }
-
   .blocks__block a:hover {
     background-color: rgba(0, 0, 0, 0.5); }
     .blocks__block a:hover .blocks__block-subtitle {
@@ -181,17 +175,14 @@ body {
   .logo {
     font-size: 1.875rem; }
 
-  .bag-login {
-    display: block;
-    line-height: 36px; }
-
   .infostring {
     height: 14px;
     line-height: 14px;
     order: 1; }
 
   .bag-login {
-    display: inline-block; }
+    display: inline-block;
+    line-height: 36px; }
 
   .carousel {
     order: 2; }

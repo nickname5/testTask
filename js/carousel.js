@@ -6,7 +6,9 @@
       infinite: true,
       dots: true,
       arrows: false,
-      centerMode: true
+      centerMode: true,
+      fade: true,
+      autoplay: true
     });
 
     $('.responsive').slick({

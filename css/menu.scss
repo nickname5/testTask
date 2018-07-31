@@ -374,6 +374,9 @@
 
   .menu__bar {
     max-height: 610px;
+  }
+
+  .bar {
     overflow-y: auto;
   }
 
@@ -544,14 +547,6 @@
   border-bottom: solid 1px #c6c6c6;
 }
 
-%bar-wrapper {
-  width: 100%;
-  max-width: 440px;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
 .bar__product-wrapper {
   width: 100%;
   height: 100%;
@@ -680,7 +675,7 @@
   }
 }
 
-.menu__bar {
+.bar {
   &::-webkit-scrollbar {
     width: 6px;
     background-color: white;

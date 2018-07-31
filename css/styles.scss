@@ -97,10 +97,6 @@ $greyText: rgb(57, 57, 57);
     order: 2;
   }
 
-  .bag-login {
-    display: none;
-  }
-
   .carousel {
     order: 3;
   }
@@ -191,15 +187,12 @@ $greyText: rgb(57, 57, 57);
 
   .form-button {
     color: white;
+    border: solid black 2px;
+    box-shadow: 0 4px 0 0 #4f5052;
   }
 
   .form-input {
     border: solid #d0d0d0 2px;
-  }
-
-  .form-button {
-    border: solid black 2px;
-    box-shadow: 0 4px 0 0 #4f5052;
   }
 }
 
@@ -219,9 +212,6 @@ $greyText: rgb(57, 57, 57);
 
   .blocks__block {
     @include grid(7.5px);
-  }
-
-  .blocks__block {
     a:hover {
       background-color: rgba(0, 0, 0, 0.5);
       .blocks__block-subtitle {
@@ -261,11 +251,6 @@ $greyText: rgb(57, 57, 57);
     font-size: remy(30);
   }
 
-  .bag-login {
-    display: block;
-    line-height: 36px;
-  }
-
   .infostring {
     height: 14px;
     line-height: 14px;
@@ -274,6 +259,7 @@ $greyText: rgb(57, 57, 57);
 
   .bag-login {
     display: inline-block;
+    line-height: 36px;
   }
 
   .carousel {
